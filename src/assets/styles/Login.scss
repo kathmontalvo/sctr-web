@@ -1,0 +1,219 @@
+.login-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.fondo{
+  // background-image: url('../images/fondo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.ingresar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #e4dddd87;
+}
+
+.ingresar .return{
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.fas{
+  font-size: 30px;
+  background: black;
+  color: white;
+  opacity: 55%;
+  padding: 3px 10px;
+}
+
+.account{
+  padding-bottom: 40px;
+  width: 75%;
+}
+
+.ingresar h1 {
+  color: var(--dark-color);
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 25px 0 15px 0px;
+}
+
+.ingresar .first-p {
+  color: var(--dark-color);
+  font-size: 16px;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.items-container{
+  padding-top: 50px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  margin:30px 0;
+}
+.password {
+  display: flex;
+  flex-direction: column;
+  margin:30px 0 ;
+}
+
+.password label,
+.email label {
+  font-size: 17px;
+  color: var(--dark-color);
+}
+
+.password input,
+.email input {
+  width: 355px;
+  height: 35px;
+  padding-left: 20px;
+  font-size: 15px;
+  margin-top: 15px;
+  border: 1px solid var(--gray-color);
+}
+
+::-webkit-input-placeholder {
+  color: var(--gray-color);
+}
+
+.forget {
+  padding: 0;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.forget li {
+  list-style: none;
+}
+
+.forget a, .forget p {
+  text-decoration: none;
+  font-size: 16px;
+  display: inline;
+}
+
+.forget .pass {
+  color: var(--gray-color);
+  margin-right: 10px;
+}
+
+.forget .recover {
+  color: var(--green-color);
+}
+
+.submit{
+  margin: 50px;
+  text-align: center;
+}
+
+.submit button {
+  width: 130px;
+  height: 40px;
+  background: var(--green-color);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  background: green;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+}
+
+@media screen and (max-width: 1023px) {
+  .account{
+    padding: 20px;
+  }
+  .ingresar .first-p,
+  .ingresar .second-p{
+    width: 286px;
+  }
+  .items{
+    padding: 0 15px;
+  }
+  .password input, .email input{
+    width: initial;
+  }
+  .submit{
+    padding-top: 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .login-container{
+    display: initial;
+  }
+  .items-container{    
+    padding: 76px 0;
+  }
+  .account{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 20px 0;
+  }
+  .account .second-p, 
+  .account .first-p {
+    width: 350px;
+    text-align: center;
+    margin: 15px 0;
+}
+}
+
+@media screen and (max-width: 479px) {
+  .ingresar h1{
+    font-size: 23px;
+  }
+  .ingresar .first-p,
+  .ingresar .second-p{
+    width: 260px;
+  }
+  .items-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px 0;
+  }
+  .items{
+    padding: 0;
+  }
+  .password{
+    margin: 30px 0 0 0;
+  }
+  .email input,
+  .password input{
+    width: 240px;
+  }
+  .forget li{
+    display: flex;
+    flex-direction: column;
+  }
+  .forget a, .forget p{
+    margin-top: 25px;
+  }
+}

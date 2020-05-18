@@ -1,0 +1,265 @@
+.datos-de-usuario {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.fondo-2{
+    // background-image: url('../images/fondo2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ingresar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #d4cfcf99;
+}
+
+.ingresar .return {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.fas {
+  font-size: 30px;
+  background: black;
+  color: white;
+  opacity: 55%;
+  padding: 3px 10px;
+}
+
+.account-1{
+    padding: 20px 0 0 0;
+    width: 75%;
+}
+
+.ingresar h1 {
+  color: var(--dark-color);
+  font-size: 30px;
+  font-weight: lighter;
+  margin: 0;
+  padding: 25px 0 15px 0px;
+}
+
+.ingresar .second-p {
+  color: var(--dark-color);
+  font-size: 15px;
+}
+
+
+.second-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-button {
+    display: flex;
+    margin: 50px 0 15px 0;
+}
+
+.usuario,
+.empresa,
+.contratista{
+    padding: 0 7px;
+}
+
+.usuario button,
+.empresa button,
+.contratista button{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid var(--green-color);
+    color: var(--green-color);
+    background-color: white;
+    cursor: pointer;
+}
+
+.usuario button:hover,
+.empresa button:hover,
+.contratista button:hover{
+    color: white;
+    background: var(--green-color);
+}
+
+.name,
+.email,
+.password,
+.confirm{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.name input,
+.email input,
+.password input,
+.confirm input{
+    width: 374px;
+    height: 33px;
+    font-size: 15px;
+    padding-left: 10px;
+    border: 1px solid var(--gray-color);
+}
+
+
+.name label,
+.email label,
+.password label,
+.confirm label{
+    font-size: 17px;
+    margin: 10px 0;
+    color: var(--dark-color);
+}
+
+::-webkit-input-placeholder{
+    color: var(--gray-color);
+}
+
+.create{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.create button{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: var(--green-color);
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.create-user{
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+.create-user li{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.create-user a, .create-user p{
+    text-decoration: none;
+    margin: 10px;
+}
+
+.create-user .account-2{
+    color: var(--gray-color);
+    font-size: 16px;
+}
+
+.create-user .log{
+    color: var(--green-color);
+    font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 1439px) {
+    .container-button {
+        margin: 20px 0 10px 0;
+    }
+    .name, .email, .password, .confirm{
+        margin: 5px 0;
+    }
+    .create{
+        margin-top: 30px;
+    }
+    .create-user{
+        margin: 0;
+    }
+    .create-user a, .create-user p{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .ingresar .return{
+        top: 30px;
+        left: 30px;
+    }
+    .ingresar .account {
+        padding: 100px 40px 0 40px;
+    }
+    .usuario, .empresa, .contratista{
+        padding: 0 10px;
+    }
+    .name input, .email input, .password input, .confirm input{
+        width: 290px;
+    }
+    .usuario button, .empresa button, .contratista button{
+        width: initial;
+        height: initial;
+        padding: 7px 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .datos-de-usuario{
+        display: initial;
+    }
+    .account-1{
+        text-align: center;
+        width: 380px;
+        padding-bottom: 30px;
+
+    }
+    .container-button{
+        margin: 20px 0 10px 0;
+    }
+    .name input, .email input, .password input, .confirm input{
+        width: 370px;
+    }
+    .create-user{
+        margin: 5px 0;
+    }
+    
+}
+@media screen and (max-width: 479px) {
+    .ingresar h1{
+        font-size: 25px;
+        padding: 20px 0;
+    }
+    .account-1{
+        text-align: center;
+        width: 75%;
+    }
+    .usuario button, .empresa button, .contratista button{
+        width: initial;
+        height: initial;
+        padding: 5px 5px;
+    }
+    .container-forms{
+        width: 73%;
+    }
+    .name input, .email input, .password input, .confirm input{
+        width: 94%;
+    }
+    .usuario, .empresa, .contratista{
+        padding: 0 2px;
+    }
+    .container-button {
+        margin: 50px 0 10px 0;
+    }
+}
+@media screen and (max-width: 319px) {
+    .ingresar .return{
+        top: 20px;
+        left: 20px;
+    }
+    .container-forms {
+        width: 80%;
+    }
+}

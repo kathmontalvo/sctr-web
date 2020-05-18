@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root{
+  --green-color: #5bb034;
+  --text-color: #97a4b1;
+  --bg-color: #eceae9d6;
+  --dark-color: #333333;
+  --gray-color: #b1becd;
+}   
+/* ---gris---#97a4b1 */
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?xbzry5');
+  src:  url('../fonts/icomoon.eot?xbzry5#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?xbzry5') format('truetype'),
+    url('../fonts/icomoon.woff?xbzry5') format('woff'),
+    url('../fonts/icomoon.svg?xbzry5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
