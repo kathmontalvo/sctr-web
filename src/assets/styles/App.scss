@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -6,10 +6,16 @@ body{
 
 :root{
   --green-color: #5bb034;
+  --green-bg: #75af5b;
   --text-color: #97a4b1;
+  --dark-color: #252631;
+  --gray-color: #79828b;
+  --light-color: #ffffff;
+  --light-shadow-color: #d0ced0;
   --bg-color: #eceae9d6;
-  --dark-color: #333333;
-  --gray-color: #b1becd;
+  --light-bg: #f4f6f8;
+  --btn-bg: rgb(171, 200, 32, 0.08);
+  --btn-bg-hover: rgb(171, 200, 32, 0.15);
 }   
 /* ---gris---#97a4b1 */
 
@@ -23,4 +29,23 @@ body{
   font-weight: normal;
   font-style: normal;
   font-display: block;
+}
+
+.btn-download {
+  background-color: var(--green-bg);
+  color: var(--light-color);
+  padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  &:hover {
+    background-color: var(--green-color);
+  }
+}
+
+.btn-reverse {
+  background-color: var(--green-color);
+  color: var(--light-color);
+  border: 1px solid var(--light-color);
+  border-radius: 10px;
+  padding: 10px;
 }

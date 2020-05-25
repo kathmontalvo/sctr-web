@@ -1,10 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import '../assets/styles/Login.scss';
 import mainBg from '../assets/static/fondoLogin.jpg';
 import sctrLogo from '../assets/static/SCTR.png';
 
 const Login = () => {
+  const history = useHistory();
+  const handleSubmit = () => {
+    history.push('/home');
+  };
+
   return (
     <div className='login-container'>
       <div className='fondo' style={{ backgroundImage: `url(${mainBg})` }}>
@@ -29,7 +34,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-      <form className='items'>
+      <form className='items' onSubmit={handleSubmit}>
         <div className='items-container'>
           <div className='email'>
             <label htmlFor='email'>Email</label>
