@@ -1,13 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   width: 85%;
   max-width: 1600px;
   margin: 0 auto;
   font-family: Helvetica, sans-serif;
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
 }
 
 header.header-home {
@@ -105,77 +105,18 @@ header.header-home {
 main {
   background: rgb(245,247,250);
   background: var(--light-bg);
-  display: grid;
-}
-
-.card-wrapper {
-  h3.card-title {
-    font-weight: normal;
-    color: var(--gray-color);
-    margin-bottom: 24px;
-  }
-  .card-container{
-    padding: 16px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 16px 0px var(--light-shadow-color);
-    .card {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      background-color: var(--light-color);
-      border-radius: 5px;
-      padding: 12px 0;
-      margin-bottom: 12px;
-      &__info {
-        display: flex;
-        flex-direction: row;
-        &--avatar {
-          height: 40px;
-          width: 40px;
-          object-fit: cover;
-          border-radius: 50%;
-          margin-right: 12px;
-        }
-        &--text {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          h4 {
-            color: var(--dark-color);
-            font-weight: normal;
-          }
-          p {
-            color: var(--gray-color);
-          }
-        }
-      }
-      &__button {
-        button{
-          background-color: var(--btn-bg);
-          color: var(--green-color);
-          padding: 12px;
-          border: 0;
-          border-radius: 10px;
-          cursor: pointer;
-          &:hover{
-            background-color: var(--btn-bg-hover);
-          }
-          &:focus{
-            background-color: var(--btn-bg-hover);
-            outline: none;
-          }
-        }
-      }
-    }
-  }
 }
 
 main.main-user {
   .container{
-    grid-template-columns: 1fr 1.5fr 1fr;
-    grid-gap: 10px;
-    .card-wrapper {
-      grid-column: 1/2;
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    grid-gap: 24px;
+    @media screen and(max-width: 992px) {
+      grid-template: 2fr / 1fr 1fr;
+    }
+    @media screen and(max-width: 576px) {
+      grid-template: 3fr / 1fr;
     }
   }
 }

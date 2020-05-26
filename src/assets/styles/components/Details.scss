@@ -1,0 +1,17 @@
+.details {
+  padding: 16px;
+  &__wrapper {
+    &--card {
+      border-bottom: 1px solid rgba(128, 128, 128, 0.25);
+      padding: 16px 0;
+      p {
+        padding-bottom: 8px;
+      }
+    }
+    .btn-download {
+      margin: 16px 0;
+    }
+  }
+}
+details > summary::-webkit-details-marker { display: none; }
+

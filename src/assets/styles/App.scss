@@ -1,3 +1,5 @@
+@import './components/Card.scss';
+
 body {
   margin: 0;
   padding: 0;
@@ -17,7 +19,8 @@ body {
   --btn-bg: rgb(171, 200, 32, 0.08);
   --btn-bg-hover: rgb(171, 200, 32, 0.15);
 }   
-/* ---gris---#97a4b1 */
+
+// Landing font-family
 
 @font-face {
   font-family: 'icomoon';
@@ -31,12 +34,15 @@ body {
   font-display: block;
 }
 
+// Buttons
+
 .btn-download {
   background-color: var(--green-bg);
   color: var(--light-color);
   padding: 10px;
   border-radius: 10px;
   border: 0;
+  cursor: pointer;
   &:hover {
     background-color: var(--green-color);
   }
@@ -48,4 +54,14 @@ body {
   border: 1px solid var(--light-color);
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
+}
+
+// Color text 
+
+.gray-text {
+  color: var(--gray-color)
+}
+.dark-text {
+  color: var(--dark-color)
 }
