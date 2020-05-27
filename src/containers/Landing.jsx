@@ -91,35 +91,6 @@ const Landing = () => (
       </div>
     </section>
 
-    <section
-      id='Nosotros'
-      className='second-section'
-      style={{ backgroundImage: `url(${aboutUsBg})` }}
-    >
-      <div className='container-second'>
-        <h1>Nosotros</h1>
-        <p className='paragraph-1'>
-          {' '}
-          Promoviendo el cuidado Medio Ambiental, innovamos y conseguimos
-          adaptar el seguro S.C.T.R. a una versión móvil y así reducimos la
-          impresión de documentos. Evitamos la necesidad de presentar y
-          almacenar físicamente los seguros. La información se encuentra
-          compartida y almacenada a través de la nube.
-        </p>
-
-        <p className='paragraph-2'>
-          INSURED WM - somos una empresa peruana que busca agilizar labores
-          rutinarias a tanto Empresas como Personas. Facilitamos un modelo de
-          control y registro laboral sincronizado y actualizado en todo momento.
-          Facilitamos la comunicación entre la Planta, el Usuario y su empresa
-          Contratista.
-        </p>
-        <form action=''>
-          <button type='submit'>Siguiente</button>
-        </form>
-      </div>
-    </section>
-
     <section id='Funciona' className='third-section'>
       <div className='works-container'>
         <h1>¿Cómo Funciona?</h1>
@@ -158,6 +129,35 @@ const Landing = () => (
       <figure className='computer'>
         <img src={funciona} width='250px' height='150px' alt='' />
       </figure>
+    </section>
+
+    <section
+      id='Nosotros'
+      className='second-section'
+      style={{ backgroundImage: `url(${aboutUsBg})` }}
+    >
+      <div className='container-second'>
+        <h1>Nosotros</h1>
+        <p className='paragraph-1'>
+          {' '}
+          Promoviendo el cuidado Medio Ambiental, innovamos y conseguimos
+          adaptar el seguro S.C.T.R. a una versión móvil y así reducimos la
+          impresión de documentos. Evitamos la necesidad de presentar y
+          almacenar físicamente los seguros. La información se encuentra
+          compartida y almacenada a través de la nube.
+        </p>
+
+        <p className='paragraph-2'>
+          INSURED WM - somos una empresa peruana que busca agilizar labores
+          rutinarias a tanto Empresas como Personas. Facilitamos un modelo de
+          control y registro laboral sincronizado y actualizado en todo momento.
+          Facilitamos la comunicación entre la Planta, el Usuario y su empresa
+          Contratista.
+        </p>
+        <form action=''>
+          <button type='submit'>Siguiente</button>
+        </form>
+      </div>
     </section>
 
     <section

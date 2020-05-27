@@ -1,6 +1,8 @@
 .details {
   padding: 16px;
+  margin-bottom: 28px;
   &__wrapper {
+    margin-bottom: 28px;
     &--card {
       border-bottom: 1px solid rgba(128, 128, 128, 0.25);
       padding: 16px 0;
@@ -8,10 +10,11 @@
         padding-bottom: 8px;
       }
     }
-    .btn-download {
-      margin: 16px 0;
-    }
+  }
+  .btn-download {
+    text-decoration: none;
   }
 }
-details > summary::-webkit-details-marker { display: none; }
-
+details > summary::-webkit-details-marker {
+  display: none;
+}

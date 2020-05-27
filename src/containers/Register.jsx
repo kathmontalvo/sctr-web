@@ -18,7 +18,7 @@ const Register = () => {
             <Link to='/'>
               <img src={sctrLogo} width='150px' height='50px' alt='' />
             </Link>
-            <h1>Ingresa a tu Cuenta</h1>
+            <h1>Crear Usuario</h1>
             <p className='second-p'>
               Persona que realiza labores en Planta – Asegurado
             </p>

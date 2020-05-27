@@ -1,7 +1,7 @@
 import React from 'react';
 import avatar from '../../assets/static/img_avatar.png';
 
-const Card = ({ seeDetails, id }) => (
+const Card = ({ seeDetails, id, btnText }) => (
   <div className='card'>
     <div className='card__info'>
       <img className='card__info--avatar' src={avatar} alt='avatar de empresa' />
@@ -11,7 +11,7 @@ const Card = ({ seeDetails, id }) => (
       </div>
     </div>
     <div className='card__button'>
-      <button type='button' onClick={(e) => seeDetails(id)}>Ver más</button>
+      <button type='button' onClick={(e) => seeDetails(id)}>{btnText}</button>
     </div>
   </div>
 );

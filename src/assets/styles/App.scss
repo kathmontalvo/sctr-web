@@ -55,6 +55,9 @@ body {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+  &:hover {
+    background-color: var(--green-bg);
+  }
 }
 
 // Color text 

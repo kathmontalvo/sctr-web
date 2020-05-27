@@ -1,4 +1,5 @@
 import React from 'react';
+import document from '../../assets/docs/prueba.pdf';
 import '../../assets/styles/components/Details.scss';
 
 const Details = () => {
@@ -14,10 +15,10 @@ const Details = () => {
       <div className='details__wrapper'>
         <Card title='Tipo de seguro' text='SCTR Completo' />
         <Card title='Cantidad de asegurados' text='10 asegurados' />
-        <button type='button' className='btn-download'>
-          Descargar seguro en PDF
-        </button>
       </div>
+      <a href={document} download type='button' className='btn-download'>
+        Descargar seguro en PDF
+      </a>
     </aside>
   );
 };

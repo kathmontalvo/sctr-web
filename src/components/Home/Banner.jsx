@@ -1,4 +1,5 @@
 import React from 'react';
+import Graphic from '../Graphic';
 
 const Banner = () => (
   <section className='banner'>
@@ -14,7 +15,7 @@ const Banner = () => (
         </div>
       </article>
       <section className='banner__graphic'>
-        graphic here
+        <Graphic />
       </section>
     </div>
   </section>
