@@ -103,6 +103,7 @@
   font-weight: bolder;
   text-transform: uppercase;
   color: var(--dark-color);
+  margin-bottom: 24px;
 }
 
 .first-section .text-1,
@@ -448,13 +449,17 @@ form .log-in{
 
 .insured {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   box-shadow: 3px 16px 20px 0px;
   border: none;
+  padding: 20px;
+
 }
 
-.insured img{
-  padding: 20px;
+.insured p{
+  margin-top: -10px;
 }   
 
 .burger-button{
@@ -583,6 +588,7 @@ form .log-in{
       .first-section h1{
           grid-column: 2/span 10;
           font-size: 25px;
+          margin-bottom: 24px;
       }
       .first-section .text-1,
       .first-section .text-2,

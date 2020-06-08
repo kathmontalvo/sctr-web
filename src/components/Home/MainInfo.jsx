@@ -1,8 +1,8 @@
 import React from 'react';
 
-const MainInfo = ({ children }) => (
+const MainInfo = ({ children, classes }) => (
   <main className='main-user'>
-    <div className='container'>
+    <div className={`container ${classes}`}>
       {children}
     </div>
   </main>

@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  background-color: #d4cfcf99;
+  background-color: rgba(212, 207, 207, 0.7);
 }
 
 .ingresar .return {
@@ -99,10 +99,10 @@
     margin: 10px 0;
 }
 
-.name input,
-.email input,
-.password input,
-.confirm input{
+.name label input,
+.email label input,
+.password label input,
+.confirm label input{
     width: 374px;
     height: 33px;
     font-size: 15px;
@@ -118,6 +118,8 @@
     font-size: 17px;
     margin: 10px 0;
     color: var(--dark-color);
+    display: flex;
+    flex-direction: column;
 }
 
 ::-webkit-input-placeholder{
@@ -197,7 +199,7 @@
     .usuario, .empresa, .contratista{
         padding: 0 10px;
     }
-    .name input, .email input, .password input, .confirm input{
+    .name label input, .email label input, .password label input, .confirm label input{
         width: 290px;
     }
     .usuario button, .empresa button, .contratista button{
@@ -219,7 +221,7 @@
     .container-button{
         margin: 20px 0 10px 0;
     }
-    .name input, .email input, .password input, .confirm input{
+    .name label input, .email label input, .password label input, .confirm label input{
         width: 370px;
     }
     .create-user{
@@ -244,7 +246,7 @@
     .container-forms{
         width: 73%;
     }
-    .name input, .email input, .password input, .confirm input{
+    .name label input, .email label input, .password label input, .confirm label input{
         width: 94%;
     }
     .usuario, .empresa, .contratista{
