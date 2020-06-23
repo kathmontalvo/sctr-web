@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Graphic from '../Graphic';
 
 const Banner = ({ userName, graphicTitle, graphicSubTitle }) => (
@@ -12,6 +13,9 @@ const Banner = ({ userName, graphicTitle, graphicSubTitle }) => (
         <div className='banner__text--data'>
           <p>{graphicSubTitle}</p>
           <h3>{graphicTitle}</h3>
+          <Link to='/dashboard' className='btn-download' type='button'>
+            Ver más gŕaficos
+          </Link>
         </div>
       </article>
       <section className='banner__graphic'>

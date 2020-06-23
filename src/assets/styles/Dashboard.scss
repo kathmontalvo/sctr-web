@@ -1,0 +1,20 @@
+.dashboard {
+  .banner {
+    .container {
+      flex-direction: column;
+      .graphic-group {
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 300px;
+        width: 100%;
+        padding: 16px;
+        .graphic {
+          width: 100%;
+          @media screen and (min-width:768px) {
+            width: 50%
+          }
+        }
+      }
+    }
+  }
+}

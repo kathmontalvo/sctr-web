@@ -69,7 +69,7 @@ const Register = () => {
             <button type='button' onClick={((e) => updateRegister(textPlant, plantBg))}>Soy Empresa</button>
           </form>
           <form className='contratista' action=''>
-            <button type='button' onClick={((e) => updateRegister(textCompany, companyBg))}>Soy Contratista</button>
+            <button type='button' onClick={((e) => updateRegister(textCompany, companyBg))}>Soy Usuario administrador</button>
           </form>
         </div>
         <form className='container-forms'>

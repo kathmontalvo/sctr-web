@@ -12,7 +12,7 @@
   },
   "keywords": [],
   "author": "Kath Montalvo",
-  "homepage": "https://kathmontalvo.github.io/sctr-web/",
+  "homepage": "http://kathmontalvo.github.io/sctr-web",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.9.6",

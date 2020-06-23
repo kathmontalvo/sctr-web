@@ -145,7 +145,7 @@ const Landing = () => {
             cuenta desde la web.
           </p>
           <p>
-            <strong>Contratista: </strong>
+            <strong>Usuario administrador: </strong>
             Afilia a Usuarios de tu representada que estén
             asegurados dentro del S.C.T.R. de tu empresa. Visualiza a través
             de la web los registros que tus Usuarios Afiliados realicen en

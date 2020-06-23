@@ -1,4 +1,5 @@
 @import './components/Card.scss';
+@import './components/Banner.scss';
 
 body {
   margin: 0;
@@ -9,8 +10,8 @@ body {
 :root{
   --green-color: #5bb034;
   --green-bg: #75af5b;
-  --text-color: #97a4b1;
-  --dark-color: #252631;
+  --text-color: #474c52;
+  --dark-color: #191a24;
   --gray-color: #79828b;
   --gray-color-shadow: #a3b2c3;
   --light-color: #ffffff;
@@ -44,6 +45,7 @@ body {
   border-radius: 10px;
   border: 0;
   cursor: pointer;
+  text-decoration: none;
   &:hover {
     background-color: var(--green-color);
   }

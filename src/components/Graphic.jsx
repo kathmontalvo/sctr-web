@@ -1,9 +1,9 @@
-import React, { useEffect, createElement } from 'react';
+import React, { useEffect } from 'react';
 import Chart from 'chart.js';
 
-const Graphic = () => {
+const Graphic = ({ name = 'main' }) => {
   const createChart = () => {
-    const ctx = document.getElementById('main-chart');
+    const ctx = document.getElementById(`${name}-chart`);
     const newChart = new Chart(ctx, {
       type: 'bar',
       data: {
@@ -45,7 +45,7 @@ const Graphic = () => {
   useEffect(() => {
     createChart();
   }, []);
-  return <canvas id='main-chart' />;
+  return <canvas id={`${name}-chart`} />;
 };
 
 export default Graphic;
