@@ -29,8 +29,8 @@ const HomeCompany = () => {
   ];
   return (
     <>
-      <Header avatar={avatarContratista} />
-      <Banner userName='SPI Gamma SAC' graphicSubTitle='Comparado al mes anterior' graphicTitle='50% aumento de colaboradores en planta' />
+      <Header avatar={avatarContratista} redirect='/home-company' />
+      <Banner userName='SPI Gamma SAC' graphicSubTitle='Comparado al mes anterior' graphicTitle='50% aumento de colaboradores en planta' redirect='dashboard-company' />
       <MainInfo classes='container-plant'>
         <CardContainer title='Empresas'>
           <DetailsContainer id='1' avatar={avatarPlant} title='Antamina' date='Planta Arequipa'>

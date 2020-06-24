@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Graphic from '../Graphic';
 
-const Banner = ({ userName, graphicTitle, graphicSubTitle }) => (
+const Banner = ({ userName, graphicTitle, graphicSubTitle, redirect }) => (
   <section className='banner'>
-    <div className='container'>
+    <div className='banner__container container'>
       <article className='banner__text'>
         <div className='banner__text--greeting'>
           <p>¡Hola!</p>
@@ -13,7 +13,7 @@ const Banner = ({ userName, graphicTitle, graphicSubTitle }) => (
         <div className='banner__text--data'>
           <p>{graphicSubTitle}</p>
           <h3>{graphicTitle}</h3>
-          <Link to='/dashboard' className='btn-download' type='button'>
+          <Link to={`/${redirect}?graphic=bar`} className='btn-download' type='button'>
             Ver más gŕaficos
           </Link>
         </div>

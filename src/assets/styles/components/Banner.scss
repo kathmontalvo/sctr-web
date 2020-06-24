@@ -14,7 +14,7 @@
     var(--green-bg) 50%,
     var(--light-bg) 50%
   );
-  .container {
+  &__container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

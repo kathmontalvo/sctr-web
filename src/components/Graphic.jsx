@@ -1,15 +1,19 @@
 import React, { useEffect } from 'react';
 import Chart from 'chart.js';
 
-const Graphic = ({ name = 'main' }) => {
+let myLineChart;
+
+const Graphic = ({ name = 'main', chartType = 'bar', legend = false, label = 'Bar Dataset' }) => {
   const createChart = () => {
     const ctx = document.getElementById(`${name}-chart`);
-    const newChart = new Chart(ctx, {
-      type: 'bar',
+    if (typeof myLineChart !== 'undefined') myLineChart.destroy();
+
+    myLineChart = new Chart(ctx, {
+      type: chartType,
       data: {
         datasets: [
           {
-            label: 'Bar Dataset',
+            label: label,
             data: [10, 20, 40, 30],
             // this dataset is drawn below
             order: 1,
@@ -28,7 +32,7 @@ const Graphic = ({ name = 'main' }) => {
         responsive: true,
         maintainAspectRatio: false,
         legend: {
-          display: false,
+          display: legend,
         },
         scales: {
           yAxes: [
@@ -49,3 +53,4 @@ const Graphic = ({ name = 'main' }) => {
 };
 
 export default Graphic;
+export { myLineChart };

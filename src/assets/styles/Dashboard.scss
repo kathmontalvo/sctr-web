@@ -1,17 +1,57 @@
-.dashboard {
+.dashboard-app {
   .banner {
-    .container {
-      flex-direction: column;
-      .graphic-group {
-        display: flex;
-        flex-wrap: wrap;
-        max-height: 300px;
-        width: 100%;
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      // height: 400px;
+      &__options {
+        width: 30%;
+        margin-right: 24px;
+        background-color: var(--light-color);
+        box-shadow: 0px 4px 16px 0px var(--light-shadow-color);
+        border-radius: 10px;
         padding: 16px;
-        .graphic {
-          width: 100%;
-          @media screen and (min-width:768px) {
-            width: 50%
+        &--list-group {
+          a {
+            text-decoration: none;
+          }
+          li {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            padding: 16px;
+            margin: 16px 0;
+            color: var(--gray-color);
+            border-radius: 5px;
+            box-shadow: -2px 4px 10px 3px #cecece;
+            font-weight: 600;
+            line-height: 1.5rem;
+            .fa-chevron-right {
+              color: var(--gray-color)
+            }
+            &:hover{
+              background-color: #e2e7ea;
+            }
+          }
+        }
+      }
+      &__graphic {
+        width: 65%;
+        background-color: var(--light-color);
+        box-shadow: 0px 4px 16px 0px var(--light-shadow-color);
+        border-radius: 10px;
+        padding: 16px;
+        &--top {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 16px 0 24px;
+          &_title{
+            width: 50%;
+          }
+          &_input-group{
+            width: 50%;
           }
         }
       }

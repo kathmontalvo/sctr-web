@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MainInfo from '../../components/Home/MainInfo.jsx';
 import Banner from '../../components/Home/Banner.jsx';
 import Aside from '../../components/Home/Aside.jsx';
 import AsideUp from '../../components/Home/AsideUp.jsx';
-import Card from '../../components/Home/Card.jsx';
 import CardContainer from '../../components/Home/CardContainer.jsx';
 import Header from '../../components/Header.jsx';
 import Footer from '../../components/Footer.jsx';
@@ -17,8 +16,8 @@ const Home = () => {
 
   return (
     <>
-      <Header avatar={avatar} />
-      <Banner userName='Wilfredo Ramos' graphicSubTitle='Días en planta' graphicTitle='120' />
+      <Header avatar={avatar} redirect='/home-user' />
+      <Banner userName='Wilfredo Ramos' graphicSubTitle='Días en planta' graphicTitle='120' redirect='dashboard-user' />
       <MainInfo>
         <CardContainer>
           <DetailsContainer id='1' avatar={avatar}>

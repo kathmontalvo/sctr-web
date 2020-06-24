@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import sctrLogo from '../assets/static/SCTR.png';
 
-const Header = ({ avatar }) => (
+const Header = ({ avatar, redirect }) => (
   <header className='header-home'>
     <div className='container header'>
-      <Link to='/home-user' className='header__logo'>
+      <Link to={redirect} className='header__logo'>
         <img src={sctrLogo} alt='Logo SCTR' />
         <p>Seguro Complementario de Trabajo de Riesgo</p>
       </Link>

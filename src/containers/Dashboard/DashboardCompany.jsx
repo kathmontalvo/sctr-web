@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { Bar, Doughnut } from 'react-chartjs-2';
+import { Bar, Doughnut, HorizontalBar } from 'react-chartjs-2';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import avatarUser from '../../assets/static/img_avatar.png';
+import avatarContratista from '../../assets/static/contratista.png';
 
 import '../../assets/styles/Dashboard.scss';
 
@@ -33,16 +33,11 @@ const Dashboard = () => {
         order: 2,
       },
     ],
-    doughnut: [
+    horizontalBar: [
       {
         label: 'Bar dataset',
         data: [10, 20, 40, 30],
-        backgroundColor: [
-          'rgba(255, 0, 0, 0.5)',
-          'rgba(255, 255, 0, 0.5)',
-          'rgba(117, 175, 91, 0.5)',
-          'rgba(0, 0, 255, 0.5)',
-        ],
+        backgroundColor: 'rgba(117, 175, 91, 0.5)',
       },
     ],
     doubleBar: [{
@@ -116,30 +111,30 @@ const Dashboard = () => {
 
   return (
     <div className='dashboard-app'>
-      <Header avatar={avatarUser} redirect='/home-user' />
+      <Header avatar={avatarContratista} redirect='/home-company' />
       <main className='banner'>
         <div className='container dashboard'>
           <section className='dashboard__options'>
             <ul className='dashboard__options--list-group'>
-              <Link to='/dashboard-user?graphic=bar'>
+              <Link to='/dashboard-company?graphic=bar'>
                 <li className='list' onClick={() => changeGraphic('bar', 'Horas de campo por día')}>
                   Horas de campo por día
                   <FontAwesomeIcon icon={faChevronRight} />
                 </li>
               </Link>
-              <Link to='/dashboard-user?graphic=doughnut'>
-                <li className='list' onClick={() => changeGraphic('doughnut', 'Porcentaje de trabajo de campo')}>
+              <Link to='/dashboard-company?graphic=horizontalBar'>
+                <li className='list' onClick={() => changeGraphic('horizontalBar', 'Porcentaje de trabajo de campo')}>
                   Porcentaje de trabajo de campo
                   <FontAwesomeIcon icon={faChevronRight} />
                 </li>
               </Link>
-              <Link to='/dashboard-user?graphic=doubleBar'>
-                <li className='list' onClick={() => changeGraphic('doubleBar', 'Horas extra')}>
+              <Link to='/dashboard-company?graphic=noBar'>
+                <li className='list' onClick={() => changeGraphic('noBar', 'Horas extra')}>
                   Horas extra
                   <FontAwesomeIcon icon={faChevronRight} />
                 </li>
               </Link>
-              <Link to='/dashboard-user?graphic=barStacked'>
+              <Link to='/dashboard-company?graphic=barStacked'>
                 <li className='list' onClick={() => changeGraphic('barStacked', 'Sumatoria plantas visitadas')}>
                   Sumatoria plantas visitadas
                   <FontAwesomeIcon icon={faChevronRight} />
@@ -157,8 +152,8 @@ const Dashboard = () => {
                 </div>
               </div>
               { chartType === 'bar' && <Bar data={chartData} options={chartOptions} /> }
-              { chartType === 'doughnut' && <Doughnut data={chartData} options={chartOptions} /> }
-              { chartType === 'doubleBar' && <Bar data={chartData} options={chartOptions} /> }
+              { chartType === 'horizontalBar' && <HorizontalBar data={chartData} options={chartOptions} /> }
+              { chartType === 'noBar' && ''}
               { chartType === 'barStacked' && <Bar data={chartData} options={chartOptions} /> }
             </div>
           </section>

@@ -8,6 +8,8 @@ import HomeUser from '../containers/Home/HomeUser.jsx'
 import HomePlant from '../containers/Home/HomePlant.jsx'
 import HomeCompany from '../containers/Home/HomeCompany.jsx'
 import DashboardUser from '../containers/Dashboard/DashboardUser.jsx'
+import DashboardPlant from '../containers/Dashboard/DashboardPlant.jsx'
+import DashboardCompany from '../containers/Dashboard/DashboardCompany.jsx'
 
 const Routes = () => (
   <BrowserRouter>
@@ -20,6 +22,8 @@ const Routes = () => (
       <Route exact path='/register' component={Register} />
       <Route exact path='/register-confirmation' component={RegisterConfirm} />
       <Route exact path='/dashboard-user' component={DashboardUser} />
+      <Route exact path='/dashboard-plant' component={DashboardPlant} />
+      <Route exact path='/dashboard-company' component={DashboardCompany} />
     </Switch>
   </BrowserRouter>
 );

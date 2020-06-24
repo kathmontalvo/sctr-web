@@ -17,8 +17,8 @@ import '../../assets/styles/Home.scss';
 const HomeCompany = () => {
   return (
     <>
-      <Header avatar={avatarPlant} />
-      <Banner userName='Compañía Antamina' graphicSubTitle='Comparado al mes anterior' graphicTitle='20% aumento de proveedores' />
+      <Header avatar={avatarPlant} redirect='/home-plant' />
+      <Banner userName='Compañía Antamina' graphicSubTitle='Comparado al mes anterior' graphicTitle='20% aumento de proveedores' redirect='dashboard-plant' />
       <MainInfo classes='container-plant'>
         <CardContainer>
           <DetailsContainer id='1' avatar={avatarContratista}>
