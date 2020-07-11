@@ -10,11 +10,11 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const handleSubmit = () => {
     if (email === 'usuario@sctr.com' && password === '123456') { //USUARIO
-      history.push('/home-user');
+      history.push('home-user');
     } else if (email === 'planta@sctr.com' && password === '123456') { //PLANTA
-      history.push('/home-plant');
+      history.push('home-plant');
     } else if (email === 'contratista@sctr.com' && password === '123456') { //CONTRATISTA
-      history.push('/home-company');
+      history.push('home-company');
     }
   };
 

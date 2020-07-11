@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <>
-      <Header avatar={avatar} redirect='/home-user' />
+      <Header avatar={avatar} redirect='home-user' />
       <Banner userName='Wilfredo Ramos' graphicSubTitle='Días en planta' graphicTitle='120' redirect='dashboard-user' />
       <MainInfo>
         <CardContainer>

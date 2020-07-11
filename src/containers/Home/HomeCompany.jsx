@@ -29,7 +29,7 @@ const HomeCompany = () => {
   ];
   return (
     <>
-      <Header avatar={avatarContratista} redirect='/home-company' />
+      <Header avatar={avatarContratista} redirect='home-company' />
       <Banner userName='SPI Gamma SAC' graphicSubTitle='Comparado al mes anterior' graphicTitle='50% aumento de colaboradores en planta' redirect='dashboard-company' />
       <MainInfo classes='container-plant'>
         <CardContainer title='Empresas'>
