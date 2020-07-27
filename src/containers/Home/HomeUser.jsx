@@ -9,6 +9,7 @@ import Footer from '../../components/Footer.jsx';
 import Details from '../../components/Home/InsuranceDetails.jsx';
 import DetailsContainer from '../../components/Home/DetailsContainer.jsx';
 import avatar from '../../assets/static/img_avatar.png';
+import avatarPlant from '../../assets/static/antamina.png';
 
 import '../../assets/styles/Home.scss';
 
@@ -19,7 +20,7 @@ const Home = () => {
       <Header avatar={avatar} redirect='home-user' />
       <Banner userName='Wilfredo Ramos' graphicSubTitle='Días en planta' graphicTitle='120' redirect='dashboard-user' />
       <MainInfo>
-        <CardContainer>
+        <CardContainer title='Mis SCTR'>
           <DetailsContainer id='1' avatar={avatar}>
             <Details />
           </DetailsContainer>
@@ -33,23 +34,27 @@ const Home = () => {
             <Details />
           </DetailsContainer>
         </CardContainer>
-        <CardContainer>
-          <DetailsContainer id='5' avatar={avatar}>
+        <CardContainer title='Empresas'>
+          <DetailsContainer id='5' avatar={avatarPlant}>
             <Details />
           </DetailsContainer>
-          <DetailsContainer id='6' avatar={avatar}>
+          <DetailsContainer id='6' avatar={avatarPlant}>
             <Details />
           </DetailsContainer>
-          <DetailsContainer id='7' avatar={avatar}>
+          <DetailsContainer id='7' avatar={avatarPlant}>
             <Details />
           </DetailsContainer>
-          <DetailsContainer id='8' avatar={avatar}>
+          <DetailsContainer id='8' avatar={avatarPlant}>
             <Details />
           </DetailsContainer>
         </CardContainer>
         <Aside>
-          <AsideUp />
-        </Aside>
+        <AsideUp 
+            text='
+              Agrega aquí tu documento S.C.T.R. Verifica los datos sincronizados y confirma que sean
+              correcto, estos se verán reflejados en el App móvil “SCTR Usuario”.
+            '
+          />        </Aside>
       </MainInfo>
       <Footer />
     </>

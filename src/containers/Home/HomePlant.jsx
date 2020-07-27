@@ -67,7 +67,12 @@ const HomeCompany = () => {
           </DetailsContainer>
         </CardContainer>
         <Aside title='Contratista' titleBtn='colaborador'>
-          <AsideUp />
+          <AsideUp 
+            text='
+            Agrega aquí el documento S.C.T.R. de un Usuario que quiera ingresar a planta. Regístralo
+            a través del código numérico del S.C.T.R. generado por el App “SCTR Usuario”.
+            '
+          />
         </Aside>
       </MainInfo>
       <Footer />

@@ -8,22 +8,22 @@ import sctrLogo from '../assets/static/SCTR.png';
 
 const Register = () => {
   const textUser = [
-    'Persona que realiza labores en Planta – Asegurado',
-    'Lleva tu diario personal de labores en campo, controla tus horarios y horas extra.',
-    'Cuenta en todo momento con tu S.C.T.R. almacenado en tu dispositivo móvil para toda labor de riesgo.',
+    'Persona que ejecuta labores de riesgo en Planta – Asegurado – también conocido como Afiliado de un Usuario Administrador',
+    'Lleva tu diario personal de trabajos y actividades en campo, controla tus horarios regulares y horas extra.',
+    'Cuenta en todo momento con tu S.C.T.R. almacenado en tu dispositivo móvil – App “SCTR Usuario”.',
     'No olvides mantener actualizado tu seguro y revisar la vigencia del mismo.',
   ];
   const textPlant = [
-    'Empresa que recibe a Usuarios contratistas para todo tipo de trabajo o reunión dentro de Planta.',
-    'Obtén reportes ordenados de los registros de ingreso y salida de cada Usuario Contratista.',
-    'Cuenta con el documento S.C.T.R. de los Usuarios Contratistas en la nube, evita almacenar y acumular papel.',
-    'Ponte en contacto con nosotros para personalizar la información a visualizar.',
+    'Empresa que recibe a Usuarios contratistas para todo tipo de trabajo o bien reunión dentro de la Planta.',
+    'Obtendrás reportes ordenados de los registros de ingreso y salida de cada Usuario y persona que ingrese a planta y cuente con un seguro S.C.T.R.',
+    'Cuenta con el documento S.C.T.R. de los Usuarios en la nube, evita almacenar y acumular papel.',
+    'Ponte en contacto con nosotros para personalizar la información a visualizar en tus reportes.',
   ];
-  const textCompany = [
-    'Representante de la empresa que realiza actividades de riesgo y maneja un grupo de trabajo, Contratista.',
-    'Obtén información y reportes de los días y horas en Planta de tus Afiliados.',
-    'Visualiza la ubicación y el tiempo de tus Afiliados en Planta.',
-    'Elabora tus propios reportes y controles de horas laborales y horas extra',
+  const textAdministrator = [
+    'Representante de la empresa que realiza actividades de riesgo y maneja un grupo de trabajo - Contratista.',
+    'Obtén información y reportes de los días y horas en Planta de tus Usuarios Afiliados.',
+    'Visualiza la ubicación y el tiempo de tus Usuarios Afiliados en Planta.',
+    'Elabora tus reportes y controla las horas laborales y extra con la información que te proporcionamos.',
   ];
   const [text, setText] = useState(textUser);
   const [registerBg, setRegisterBg] = useState(userBg);
@@ -66,10 +66,10 @@ const Register = () => {
             <button type='button' onClick={((e) => updateRegister(textUser, userBg))}>Soy Usuario</button>
           </form>
           <form className='empresa' action=''>
-            <button type='button' onClick={((e) => updateRegister(textPlant, plantBg))}>Soy Empresa</button>
+            <button type='button' onClick={((e) => updateRegister(textPlant, plantBg))}>Soy Planta</button>
           </form>
           <form className='contratista' action=''>
-            <button type='button' onClick={((e) => updateRegister(textCompany, companyBg))}>Soy Usuario administrador</button>
+            <button type='button' onClick={((e) => updateRegister(textAdministrator, companyBg))}>Soy Usuario administrador</button>
           </form>
         </div>
         <form className='container-forms'>

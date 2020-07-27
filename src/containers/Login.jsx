@@ -34,10 +34,10 @@ const Login = () => {
             <h1>Ingresa a tu Cuenta</h1>
             <p className='first-p'>Cuidemos nuestro Medio Ambiente.</p>
             <p className='first-p'>
-              Utilicemos el App Móvil (Usuario / Planta)
+              Utilicemos el App Móvil “SCTR Usuario” y “SCTR Planta”
             </p>
             <p className='first-p'>
-              Implementemos un S.C.T.R. de modo virtual - no más en físico.
+            Instauremos el uso de un documento S.C.T.R. de modo virtual - no más en físico.
             </p>
           </div>
         </div>

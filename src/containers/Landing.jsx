@@ -136,29 +136,30 @@ const Landing = () => {
         <div className='works-container'>
           <h1>¿Cómo Funciona?</h1>
           <p>
-            <strong>Usuario: </strong>
-            Podrás subir a la web tu S.C.T.R. y nosotros sintetizaremos la
-            información relevante. Confirmado por ti que la información es
-            correcta, podrás visualizarla en el App “SCTR Usuario”. Desde allí
-            registra toda actividad cuando vayas a una Planta, lleva tu diario
-            de trabajo y actividades. Visualiza tus reportes ingresando a tu
-            cuenta desde la web.
+            <b>Usuario: </b>
+            Podrás subir a la web tu documento S.C.T.R. y nosotros
+            sintetizaremos la información relevante. Confirmado por ti que la
+            información es correcta, podrás visualizarla en el App “SCTR
+            Usuario”. Desde allí registra toda actividad cuando vayas a una
+            Planta, lleva tu diario de trabajo y actividades. Visualiza tus
+            reportes ingresando a tu cuenta desde la web.
           </p>
           <p>
-            <strong>Usuario administrador: </strong>
+            <b>Usuario administrador: </b>
             Afilia a Usuarios de tu representada que estén
-            asegurados dentro del S.C.T.R. de tu empresa. Visualiza a través
-            de la web los registros que tus Usuarios Afiliados realicen en
-            Plantas. Obten reportes de las horas de ingreso y salida de
-            Planta, horas laboradas y horas extra de cada Usuario.
+            asegurados dentro del seguro S.C.T.R. de tu empresa. Visualiza a
+            través de la web los registros que los Usuarios afiliados a tu cuenta
+            realicen en Plantas. Obten reportes de las horas de ingreso y salida
+            de Planta, horas laboradas y horas extra de cada Usuario. Todo
+            ello desde tu cuenta en la web.
           </p>
           <p>
-            <strong>Planta: </strong>
+            <b>Planta: </b>
             Registra desde el App “SCTR Planta” a toda persona Usuario que
-            ingrese al Centro de Labores con el lector QR del App. Controla
-            tus registros de ingreso y salida y obten reportes a través de la
-            cuenta de la web. Podrás visualizar los comentarios que haga, así
-            como visualizar los S.C.T.R. de cada Usuario registrado.
+            ingrese al Centro de Labores con el lector QR del App. Controla tus
+            registros de ingreso y salida, obten reportes a través de la cuenta
+            de la web. Podrás visualizar las observaciones y comentarios que
+            registres, así como revisar los S.C.T.R. de cada Usuario registrado.
           </p>
         </div>
         <figure className='computer'>
@@ -174,20 +175,23 @@ const Landing = () => {
         <div className='container-second'>
           <h1>Nosotros</h1>
           <p className='paragraph-1'>
-            Promoviendo el cuidado Medio Ambiental, innovamos y conseguimos adaptar
-            el seguro S.C.T.R. a una versión móvil y así reducimos la impresión de
-            documentos.
-            <br />
-            Evitamos la necesidad de presentar y almacenar físicamente los seguros. La
-            información se encuentra compartida y almacenada a través de la nube.
+            Promoviendo el cuidado Medio Ambiental, innovamos y conseguimos adaptar el
+            seguro S.C.T.R. a una versión móvil y logrando reducir la impresión de los
+            documentos
+          <br />
+          <br />
+            Así, evitamos la necesidad de presentar y acumular físicamente los documentos.
+            La información se encuentra compartida y almacenada a través de la nube.
           </p>
+          <br />
           <p className='paragraph-2'>
-            INSURED WM - buscamos agilizar labores rutinarias y de diario a tanto
+            INSURED WM - buscamos agilizar las labores rutinarias y de diario a tanto
             Empresas como Personas. Facilitamos un modelo de control y registro laboral
-            sincronizado y actualizado en todo momento.
-            <br />
-            Conseguimos una comunicación perenne entre el Usuario, su empresa
-            Contratista y la Planta.
+            sincronizado y actualizado con cada marcación realizada por el Usuario.
+          <br />
+          <br />
+            De este modo, logramos una comunicación perenne entre el Usuario,su empresa
+            Contratista (Usuario Administrador) y la Planta.
           </p>
           <form action=''>
             <button type='submit'>Siguiente</button>
@@ -203,8 +207,10 @@ const Landing = () => {
           <h1>cuidado medio ambiental</h1>
           <div className='text'>
             <p>
-              Promovamos el cuidado de nuestra áreas verdes. Llevemos nuestro
-              información en dispositivos móviles y no en un papel.
+              Promovamos el cuidado de nuestras áreas verdes
+            </p>
+            <p>
+            Llevemos nuestra información en dispositivos móviles y no más en un papel
             </p>
           </div>
         </div>

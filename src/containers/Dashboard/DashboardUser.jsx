@@ -123,7 +123,7 @@ const Dashboard = () => {
             <ul className='dashboard__options--list-group'>
               <Link to='/dashboard-user?graphic=bar'>
                 <li className='list' onClick={() => changeGraphic('bar', 'Horas de campo por día')}>
-                  Horas de campo por día
+                  Horas en campo por día
                   <FontAwesomeIcon icon={faChevronRight} />
                 </li>
               </Link>
@@ -141,7 +141,7 @@ const Dashboard = () => {
               </Link>
               <Link to='/dashboard-user?graphic=barStacked'>
                 <li className='list' onClick={() => changeGraphic('barStacked', 'Sumatoria plantas visitadas')}>
-                  Sumatoria plantas visitadas
+                  Plantas visitadas
                   <FontAwesomeIcon icon={faChevronRight} />
                 </li>
               </Link>

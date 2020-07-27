@@ -126,13 +126,13 @@ const Dashboard = () => {
             <ul className='dashboard__options--list-group'>
               <Link to='/dashboard-plant?graphic=bar'>
                 <li className='list' onClick={() => changeGraphic('bar', 'Sumatoria de personas que registran ingreso a planta')}>
-                  Sumatoria de personas que registran ingreso a planta
+                  Usuarios terceros en planta
                   <FontAwesomeIcon icon={faChevronRight} />
                 </li>
               </Link>
               <Link to='/dashboard-plant?graphic=bar-2'>
                 <li className='list' onClick={() => changeGraphic('bar-2', 'Sumatoria de empresas terceras en planta')}>
-                  Sumatoria de empresas terceras en planta
+                  Empresas terceras en planta
                   <FontAwesomeIcon icon={faChevronRight} />
                 </li>
               </Link>

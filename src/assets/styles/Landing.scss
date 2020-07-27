@@ -117,30 +117,35 @@
 }
 
 .inputs{
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 30px;
 }
 
 form .user{
   background: var(--text-color);
-  padding: 10px 20px;
   border:none;
   color: white;
   margin: 10px;
   border-radius: 2px;
   cursor: pointer;
+  min-width: 160px;
+  height: 36px;
+  font-size: 16px;
 }
 
 form .log-in{
   background: var(--green-color);
-  padding: 10px 40px;
   border: none;
   color: white;
   margin: 10px;
   border-radius: 2px;
   cursor: pointer;
+  min-width: 160px;
+  height: 36px;
+  font-size: 16px;
 } 
 
 .second-section{
@@ -171,7 +176,7 @@ form .log-in{
 }
 .second-section .paragraph-2{
   grid-column: 3/span 7;
-  grid-row: 6/span 2;
+  grid-row: 6/span 3;
 }
 
 .second-section .paragraph-1,
@@ -186,7 +191,7 @@ form .log-in{
 
 .second-section form{
   grid-column: 3;
-  grid-row: 8/span 2;
+  grid-row: 9/span 2;
   display: flex;
   align-items: center;
 }
@@ -270,7 +275,8 @@ form .log-in{
 }
 
 .world .text{
-  width: 30%;
+  width: 50%;
+  line-height: 1.5rem;
 }
 
 .environment p{
@@ -488,14 +494,14 @@ form .log-in{
           padding: 0;
       }
       .second-section .paragraph-1{
-          grid-column: 3/ span 9;
+          grid-column: 3/ span 10;
       }
       .second-section .paragraph-2{
-          grid-column: 3/ span 9;
+          grid-column: 3/ span 10;
       }
       
       .environment .world .text{
-          width: 50%;
+          width: 70%;
       } 
   }
 
@@ -538,7 +544,7 @@ form .log-in{
       }
       .second-section .paragraph-2{
           grid-column: 3/span 11;
-          grid-row: 7/span 2;
+          grid-row: 7/span 3;
       }
       .second-section form{
           grid-row: 10;
